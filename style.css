@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    font-family: 'SUIT-Regular';
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.home {
+    width: 100%;
+    height: 100px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    background: transparent;
+    backdrop-filter: blur(6px);
+    z-index: 2;
+}
+
+.logo {
+    margin-left: 200px;
+    
+    background: url('/Img/Logo.png');
+    width: 300px;
+    height: 100px
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% - 700px);
+    line-height: 100px;
+}
+
+.navigation > li {
+    font-size: 25px;
+    margin-left: 60px;
+}
+
+.navigation > li > a {
+    color: black !important;
+    transition: 0.4s;
+}
+
+.navigation > li > a:hover {
+    color: rgb(0, 140, 255) !important;
+}
+
+.intro {
+    margin-top: 200px;
+    height: 968px;
+}
+
+.intro > h1 {
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.intro > h3 {
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.contact {
+    height: 968px;
+}
+
+.form {
+    margin-top: 4.9%;
+    margin-left: 26%;
+}
+
+.form::-webkit-scrollbar {
+    overflow: hidden;
+}
+
+.newvideo {
+    height: 968px;
+    margin-bottom: 50px;
+}
+
+.newvideo > p > iframe {
+    margin-top: 135px;
+    width: 960px;
+    height: 540px;
+}
+
+.newvideo > h1 {
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+.newvideo > h2 {
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.profile {
+    margin: auto;
+    
+    background: url('/Img/GeonBBang.png');
+    width: 256px;
+    height: 256px;
+    border-radius: 100%;
+}
