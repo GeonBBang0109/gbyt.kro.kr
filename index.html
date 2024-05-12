@@ -66,6 +66,10 @@
                         const youtubeKey = 'AIzaSyDFtjSjsD__6ak1ai3Sm6R6T7xGcvXQEfA';
                         const youtubeUser = 'UCEUcX3Y0BRZe-gKRDww1w9Q';
                         const subCount = document.querySelector('.subcount');
+                        
+                        function numberWithCommas (x) {
+                            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                        }
 
                         let getSubscribers = () => {
 
@@ -75,7 +79,7 @@
                         })
                         .then(data => {
                             console.log(data);
-                            subCount.innerHTML = ('구독자 ' + data["items"][0].statistics.subscriberCount + '명 | 총 조회수 ' + data["items"][0].statistics.viewCount + '회');
+                            subCount.innerHTML = ('구독자: ' + numberWithCommas(data["items"][0].statistics.subscriberCount) + '명 | 총 조회수: ' + numberWithCommas(data["items"][0].statistics.viewCount) + '회');
                         })
                         }
 
@@ -96,7 +100,7 @@
 
                         document.write(year + '. ' + month + '. ' + date + '. ' + hours + '시 ' + minutes + '분')
 
-                        </script> 기준)</p>
+                        </script> 기준 )</p>
                 
                 </div>
             </div>
@@ -114,7 +118,7 @@
                         <div class="about-upload-box">
                             <p class="about-upload-title">영상 업로드</p>
                             <div class="about-upload-text-wrap">
-                                <p>- 2주 1회 일요일</p>
+                                <p>- 1주 1회 일요일</p>
                             </div>
                         </div>
                     </div>
