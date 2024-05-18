@@ -60,11 +60,47 @@
                 <div class="profile-description-wrap animation-before">
                     <h1 class="profile-title"><i class="fab fa-youtube"></i> 건빵YouTube</h1>
                     <div class="profile-info">
-                        <p class="subcount">구독자: 283명</p>
+                        <p class="subcount"></p>
+
+                        <script>
+                        const youtubeKey = 'AIzaSyDFtjSjsD__6ak1ai3Sm6R6T7xGcvXQEfA';
+                        const youtubeUser = 'UCEUcX3Y0BRZe-gKRDww1w9Q';
+                        const subCount = document.querySelector('.subcount');
+                        
+                        function numberWithCommas (x) {
+                            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                        }
+
+                        let getSubscribers = () => {
+
+                        fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${youtubeUser}&key=${youtubeKey}`)
+                        .then(response => {
+                            return response.json()
+                        })
+                        .then(data => {
+                            console.log(data);
+                            subCount.innerHTML = ('구독자: ' + numberWithCommas(data["items"][0].statistics.subscriberCount) + '명 | 총 조회수: ' + numberWithCommas(data["items"][0].statistics.viewCount) + '회');
+                        })
+                        }
+
+                        getSubscribers();
+                        </script>
                     </div>
 
 
-                    <p class="profile-based">( 2024. 05. 18 14시 기준 )</p>
+                    <p class="profile-based">( <script language="JavaScript">
+
+                        let today = new Date();
+                        let year = today.getFullYear(); // 년도
+                        let month = today.getMonth() + 1;  // 월
+                        let date = today.getDate();  // 날짜
+                        let day = today.getDay();  // 요일
+                        let hours = today.getHours(); // 시
+                        let minutes = today.getMinutes();  // 분
+
+                        document.write(year + '. ' + month + '. ' + date + '. ' + hours + '시 ' + minutes + '분')
+
+                        </script> 기준 )</p>
                 
                 </div>
             </div>
