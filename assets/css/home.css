@@ -1,0 +1,595 @@
+/* Desktop-specific styles */
+@media screen and (min-width: 935px) {
+    /* GeonBBang Information Section */
+    .section-information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to bottom right, #00eaff, #005acb)
+    }
+
+    .profile {
+        margin: auto;
+        width: 256px;
+        height: 256px;
+        border-radius: 100%;
+        transition: all 0.5s;
+    }
+
+    .profile:hover {
+        transform: scale(1.02);
+    }
+
+    .pro1 {
+        background: url(/assets/images/profiles/GeonBBang.png);
+    }
+
+    .profile-title {
+        font-family: 'NanumSquareLight';
+        color: black;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+    .profile-info {
+        font-family: 'NanumSquareLight';
+        position: relative;
+        font-size: 20px;
+        text-align: center;
+        color: #000 !important;
+        transition: all 0.5s;
+        font-weight: bolder;
+    }
+
+    .fa-youtube {
+        color: red; 
+        font-size: 45px;
+    }
+
+    .subcount {
+        font-family: 'NanumSquareLight';
+        color: #000;
+    }
+
+    .profile-based {
+        font-family: 'NanumSquareLight';
+        color: rgb(77, 77, 77);
+        text-align: center;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    /* // GeonBBang Information Section */
+
+    /* About Section */
+    .section-about {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to top, #111, #000);
+    }
+
+    .about-title-wrap {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        height: 20.5vh;
+        margin: 3.5% auto 0;
+    }
+
+    .about-title {
+        position: relative;
+        font-family: 'NanumSquareExtraBold';
+        font-weight: bold;
+        font-size: 5rem;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+    }
+
+    .about-title::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 15%;
+        height: 2px;
+        margin-left: 1.5%;
+        background-color: #fff;
+    }
+
+    .about-description {
+        font-size: 1.5rem;
+    }
+
+    .about-contents-wrap {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 95%;
+        height: 70.5vh;
+        margin: 0 auto;
+    }
+
+    .about-upload-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 350px;
+        text-align: center;
+        border-radius: 15px;
+        background: #333;
+        margin-right: 2%;
+    }
+
+    .about-upload-title {
+        font-weight: bold;
+        font-size: 1.8rem;
+        margin-bottom: 3.5%;
+    }
+
+    .about-upload-text-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 12.5%;
+        border-radius: 5px;
+        font-size: 1.25rem;
+        background: #555;
+    }
+
+    .about-contact-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 350px;
+        text-align: center;
+        border-radius: 15px;
+        background: #333;
+    }
+
+    .about-contact-title {
+        font-weight: bold;
+        font-size: 1.8rem;
+        margin-bottom: 3.5%;
+    }
+
+    .about-contact-way {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 12.5%;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        background: #555;
+        transition: all 0.5s;
+    }
+
+    a.about-contact-way:hover {
+        background: rgb(77, 77, 77);
+    }
+
+    .about-upload-text-wrap:last-child {
+        margin-top: 3%;
+    }
+
+    .about-contact-way:last-child {
+        margin-top: 3%;
+    }
+
+    .about-contact-text {
+        font-size: 1.25rem;
+    }
+    /* // About Section */
+
+    /* Team Section */
+    .section-team {
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: linear-gradient(to top, #131313, #111);
+    }
+
+    .team-title-wrap {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        height: 20.5vh;
+        margin: 2.5% auto 0;
+    }
+
+    .team-title {
+        position: relative;
+        font-family: 'NanumSquareExtraBold';
+        font-weight: bold;
+        font-size: 5rem;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+    }
+
+    .team-title::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 15%;
+        height: 2px;
+        margin-left: 1.5%;
+        background-color: #fff;
+    }
+
+    .team-title > span {
+        color: #80b5ff;
+    }
+
+    .team-description {
+        font-size: 1.5rem;
+    }
+
+    .team-contents-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        height: 70.5vh;
+        margin: 0 auto;
+    }
+
+    .team-profiles-teammate {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .team-profile-teammate profile-wrap:first-child {
+        margin-bottom: 5%;
+    }
+
+    .profile-name {
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    .profile-name > span {
+        font-weight: bold;
+        letter-spacing: normal;
+    }
+
+    .profile-name.teammate {
+        margin-top: 10.5%;
+    }
+
+    .profile-name:not(span) {
+        letter-spacing: 1.5px;
+    }
+
+    .pro2 {
+        background: url(/assets/images/profiles/Ascreation.png);
+        width: 300px;
+        height: 300px;
+    }
+
+    .pro3 {
+        background: url(/assets/images/profiles/TeamPlayWorld.png);
+        width: 300px;
+        height: 300px;
+    }
+    /* // Team Section */
+
+    /* Footer */
+    .footer-copy {
+        color: #fff;
+    }
+    /* // Footer */
+}
+
+/* Desktop-specific styles */
+@media screen and (min-width: 768px) and (max-width: 935px) {
+    /* GeonBBang Information Section */
+    .section-information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to bottom right, #00eaff, #005acb)
+    }
+
+    .profile {
+        margin: auto;
+        width: 256px;
+        height: 256px;
+        border-radius: 100%;
+        transition: all 0.5s;
+    }
+
+    .profile:hover {
+        transform: scale(1.02);
+    }
+
+    .pro1 {
+        background: url(/assets/images/profiles/GeonBBang.png);
+    }
+
+    .profile-title {
+        font-family: 'NanumSquareLight';
+        color: black;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+    .profile-info {
+        font-family: 'NanumSquareLight';
+        position: relative;
+        font-size: 20px;
+        text-align: center;
+        color: #000 !important;
+        transition: all 0.5s;
+        font-weight: bolder;
+    }
+
+    .fa-youtube {
+        color: red; 
+        font-size: 45px;
+    }
+
+    .subcount {
+        font-family: 'NanumSquareLight';
+        color: #000;
+    }
+
+    .profile-based {
+        font-family: 'NanumSquareLight';
+        color: rgb(77, 77, 77);
+        text-align: center;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    /* // GeonBBang Information Section */
+
+    /* About Section */
+    .section-about {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to top, #111, #000);
+    }
+
+    .about-title-wrap {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        height: 20.5vh;
+        margin: 3.5% auto 0;
+    }
+
+    .about-title {
+        position: relative;
+        font-family: 'NanumSquareExtraBold';
+        font-weight: bold;
+        font-size: 5rem;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+    }
+
+    .about-title::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 15%;
+        height: 2px;
+        margin-left: 1.5%;
+        background-color: #fff;
+    }
+
+    .about-description {
+        font-size: 1.5rem;
+    }
+
+    .about-contents-wrap {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 95%;
+        height: 70.5vh;
+        margin: 0 auto;
+    }
+
+    .about-upload-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 350px;
+        text-align: center;
+        border-radius: 15px;
+        background: #333;
+        margin-right: 2%;
+    }
+
+    .about-upload-title {
+        font-weight: bold;
+        font-size: 1.8rem;
+        margin-bottom: 3.5%;
+    }
+
+    .about-upload-text-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 12.5%;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        background: #555;
+    }
+
+    .about-contact-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 350px;
+        text-align: center;
+        border-radius: 15px;
+        background: #333;
+    }
+
+    .about-contact-title {
+        font-weight: bold;
+        font-size: 1.8rem;
+        margin-bottom: 3.5%;
+    }
+
+    .about-contact-way {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 12.5%;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        background: #555;
+        transition: all 0.5s;
+    }
+
+    a.about-contact-way:hover {
+        background: rgb(77, 77, 77);
+    }
+
+    .about-upload-text-wrap:last-child {
+        margin-top: 3%;
+    }
+
+    .about-contact-way:last-child {
+        margin-top: 3%;
+    }
+
+    .about-contact-text {
+        font-size: 1.25rem;
+    }
+    /* // About Section */
+
+    /* Team Section */
+    .section-team {
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: linear-gradient(to top, #131313, #111);
+    }
+
+    .team-title-wrap {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        height: 20.5vh;
+        margin: 2.5% auto 0;
+    }
+
+    .team-title {
+        position: relative;
+        font-family: 'NanumSquareExtraBold';
+        font-weight: bold;
+        font-size: 5rem;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+    }
+
+    .team-title::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 15%;
+        height: 2px;
+        margin-left: 1.5%;
+        background-color: #fff;
+    }
+
+    .team-title > span {
+        color: #80b5ff;
+    }
+
+    .team-description {
+        font-size: 1.5rem;
+    }
+
+    .team-contents-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        height: 70.5vh;
+        margin: 0 auto;
+    }
+
+    .team-profiles-teammate {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .team-profile-teammate profile-wrap:first-child {
+        margin-bottom: 5%;
+    }
+
+    .profile-name {
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    .profile-name > span {
+        font-weight: bold;
+        letter-spacing: normal;
+    }
+
+    .profile-name.teammate {
+        margin-top: 10.5%;
+    }
+
+    .profile-name:not(span) {
+        letter-spacing: 1.5px;
+    }
+
+    .pro2 {
+        background: url(/assets/images/profiles/Ascreation.png);
+        width: 300px;
+        height: 300px;
+    }
+
+    .pro3 {
+        background: url(/assets/images/profiles/TeamPlayWorld.png);
+        width: 300px;
+        height: 300px;
+    }
+    /* // Team Section */
+
+    /* Footer */
+    .footer-copy {
+        color: #fff;
+    }
+    /* // Footer */
+}
